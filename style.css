@@ -1,0 +1,160 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1em;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+p, a {
+  font-size: 0.9em;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  color: #333;
+  padding: 1rem;
+}
+
+.main-header h1 {
+  align-self: center;
+  margin: 0;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 800px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  background-color: white;
+  width: 320px;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  order: -1;
+  width: 250px;
+  align-self: center;
+  margin: 1em;
+}
+
+.content p {
+  text-align: center;
+}
+
+footer.main-footer,
+main.portfolio,
+.portfolio-content,
+.marketing-page,
+.search-page,
+.travel-app,
+.maps,
+.gallery,
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7em;
+}
+
+.portfolio-content div {
+  padding: 1em;
+}
+
+.portfolio-content img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.portfolio-content h2 {
+  margin: 0;
+}
+
+.portfolio-content p {
+  text-align: center;
+  margin: 0;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F7F7;
+  padding: 3em 1em;
+}
+
+footer.main-footer h2 {
+  margin: 0.3em;
+}
+
+footer.main-footer p {
+  margin: 0;
+  text-align: center;
+  font-weight: 350;
+}
+
+.divider {
+  height: 0.5px;
+  background-color: #ccc;
+  width: 350px;
+  max-width: 1000px;
+  align-self: center;
+  border: none;
+  margin: 0.2px auto;
+}
+
+.below-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F7F7F7;
+  padding: 1em;
+}
+
+.below-footer h3, a {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #444444;
+}
