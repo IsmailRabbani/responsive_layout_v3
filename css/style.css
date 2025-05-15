@@ -1,0 +1,106 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+p, a {
+  font-size: 1em;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  color: #333;
+  padding: 1rem;
+}
+
+.main-header h1 {
+  align-self: center;
+  margin: 0;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  background-color: white;
+  width: 288px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  order: -1;
+}
+
+footer.footer,
+main.portfolio,
+.portfolio-content,
+.marketing-page,
+.search-page,
+.travel-app,
+.maps,
+.gallery,
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.portfolio-content div {
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.portfolio-content img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.portfolio-content p {
+  text-align: center;
+  margin: 0;
+}
+
+footer.footer p h1 {
+  margin: 0;
+  text-align: center;
+}
