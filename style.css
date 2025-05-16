@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 html, body {
   overflow-x: hidden;
 }
@@ -8,8 +15,6 @@ body {
   font-style: normal;
   font-size: 1em;
   color: #444444;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
   background-color: #ffffff;
 }
@@ -17,6 +22,7 @@ body {
 h1 {
   font-size: 1.5em;
   font-weight: 600;
+  margin: 0.5em;
 }
 
 h2 {
@@ -30,15 +36,11 @@ p, a {
 
 .main-header {
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: #F7F7F7;
   color: #333;
   padding: 1rem;
-}
-
-.main-header h1 {
-  align-self: center;
-  margin: 0;
 }
 
 .menu ul {
@@ -46,21 +48,18 @@ p, a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.4em;
-  padding: 0;
+  gap: 0.5em;
   list-style: none;
-  width: 100%;
-  max-width: 800px;
 }
 
-.menu a {
-  display: block;
+nav.menu a {
+  display: flex;
+  justify-content: space-around;
   text-decoration: none;
-  text-align: center;
   font-weight: 600;
   color: #333;
-  background-color: white;
-  width: 320px;
+  background-color: #FFF;
+  width: 300px;
   height: auto;
 }
 
@@ -73,7 +72,7 @@ p, a {
   order: -1;
   width: 250px;
   align-self: center;
-  margin: 1em;
+  margin: 2em 1em 1em 1em;
 }
 
 .content p {
@@ -82,7 +81,6 @@ p, a {
 
 footer.main-footer,
 main.portfolio,
-.portfolio-content,
 .marketing-page,
 .search-page,
 .travel-app,
@@ -100,14 +98,20 @@ main.portfolio,
   padding: 1em;
 }
 
+.portfolio h2 {
+  margin-top: 2em;
+  font-weight: bold;
+}
+
 .portfolio-content img {
   width: 100%;
   max-width: 350px;
   height: auto;
 }
 
-.portfolio-content h2 {
-  margin: 0;
+.portfolio-content h3 {
+  margin: 0.5em 0;
+  font-weight: 500;
 }
 
 .portfolio-content p {
@@ -157,4 +161,62 @@ footer.main-footer p {
   font-weight: 600;
   text-decoration: none;
   color: #444444;
+}
+
+
+/** Device Responsive **/
+@media (min-width: 768px) {
+
+  p {
+    font-size: 1.11em;
+  }
+  header {
+    background-color: #F7F7F7;
+  }
+  .main-header {
+    flex-direction: column;
+    padding-top: 2em;
+  }
+  .menu ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav.menu a {
+    width: 100px;
+    background-color: #F7F7F7;
+  }
+
+  .content {
+    flex-direction: row;
+    padding: 2em 2em;
+  }
+  .content p {
+    order: -1;
+    text-align: left;
+  }
+  .content img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/** Portfolio Section **/
+  .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.portfolio-content .por {
+    flex-basis: calc(50% - 20px);
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+  .portfolio h2 {
+    margin: 1em 0;
+  }
+
+  /** footer Section **/
+
+
+
 }
