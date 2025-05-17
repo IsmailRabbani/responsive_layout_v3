@@ -9,14 +9,16 @@
 </head>
 <body id="top">
 
+<!-- Header Section -->
+
   <header>
     <div class="main-header">
     <h1>Ismail Rabbani</h1>
       <nav class="menu">
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -26,7 +28,9 @@
       </div>
     </header>
 
-    <main class="portfolio">
+<!-- Portfolio Section -->
+
+    <main class="portfolio" id="portfolio">
       <h2>Portfolio</h2>
       <div class="portfolio-content">
       <div class="por marketing-page">
@@ -67,19 +71,31 @@
       </div>
     </main>
 
-    <footer class="main-footer">
-      <h2>CONTACT</h2>
+<!-- Footer Section -->
+
+    <footer class="main-footer" id="contact">
+      <h3>CONTACT</h3>
       <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you</p>
-      <p>Phone <strong>+92 349 024 6626</strong></p>
-      <p>Email <strong>ismailbaaig@gmail.com</strong></p>
+      <p>
+        Phone: <a href="tel:+923490246626">+92 3490246626</a><br>
+        Email: <a href="mailto:ismailbaaig@gmail.com">ismailbaaig@gmail.com</a>
+      </p>
     </footer>
 
       <hr class="divider">
 
-    <div class="below-footer">
+    <div class="footer-bottom">
       <h3>Ismail Rabbani</h3>
       <a href="#top"><h3>BACK TO TOP</h3></a>
     </div>
+
+    <!-- Desktop nav (hidden on mobile) -->
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
   </body>
 </html>
