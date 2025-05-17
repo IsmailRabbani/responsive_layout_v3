@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive Page Layout</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body id="top">
@@ -31,7 +31,7 @@
 <!-- Portfolio Section -->
 
     <main class="portfolio" id="portfolio">
-      <h2>Portfolio</h2>
+      <h2>PORTFOLIO</h2>
       <div class="portfolio-content">
       <div class="por marketing-page">
         <img src="images/portfolio-1.png" alt="Marketing page screenshot"/>
@@ -76,26 +76,31 @@
     <footer class="main-footer" id="contact">
       <h3>CONTACT</h3>
       <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you</p>
-      <p>
-        Phone: <a href="tel:+923490246626">+92 3490246626</a><br>
+      <p contact-info>
+        Phone: <a href="tel:+923490246626">+92 3490246626</a>
+        <br>
         Email: <a href="mailto:ismailbaaig@gmail.com">ismailbaaig@gmail.com</a>
       </p>
     </footer>
 
       <hr class="divider">
-
+<!-- Mobile Bottom Footer (hidden on Larger Screen) -->
     <div class="footer-bottom">
       <h3>Ismail Rabbani</h3>
       <a href="#top"><h3>BACK TO TOP</h3></a>
     </div>
 
-    <!-- Desktop nav (hidden on mobile) -->
+<!-- Desktop nav (hidden on mobile) -->
 
-    <nav class="footer-nav">
-      <a href="#home">Home</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="footer-bottom-ls">
+    <h1>Ismail Rabbani</h1>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
 
   </body>
 </html>
