@@ -4,17 +4,12 @@
   padding: 0;
 }
 
-
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 1em;
-  color: #444444;
+  color: #333333;
   line-height: 1.6;
   background-color: #ffffff;
 }
@@ -48,12 +43,9 @@ p, a {
   display: flex;
   flex-direction: column;
   list-style: none;
+  gap: 0.5em;
   padding: 0;
   margin: 0;
-}
-
-.menu li {
-  margin-bottom: 1em;
 }
 
 .menu a {
@@ -62,9 +54,7 @@ p, a {
   text-decoration: none;
   display: block;
   width: 300px;
-  margin: 0 auto;
-  padding: 0.5em 0;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -72,29 +62,24 @@ p, a {
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
-  padding: 0.5em 1.5em 2em 1.5em;
+  padding: 2em 0.5em;
 }
 
 .content img {
   order: -1;
-  width: 250px;
+  width: 90%;
+  max-width: 100%;
   align-self: center;
-  margin: 2em 1em 1em 1em;
+  margin-bottom: 1.5em;
 }
 
 .content p {
   text-align: center;
 }
 
-footer.main-footer,
-main.portfolio,
+.portfolio,
 .portfolio-content,
-.marketing-page,
-.search-page,
-.travel-app,
-.maps,
-.gallery,
-.calculator {
+.por {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,19 +109,22 @@ main.portfolio,
 
 .portfolio-content p {
   text-align: center;
-  margin: 0;
 }
 
-.main-footer {
+footer.main-footer {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7em;
   background-color: #F7F7F7;
   padding: 3em 1em;
 }
 
-footer.main-footer h2 {
-  margin: 0.3em;
+footer.main-footer h4 {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 footer.main-footer p {
@@ -149,7 +137,7 @@ footer.main-footer p {
   height: 0.5px;
   background-color: #ccc;
   width: 90%;
-  max-width: 1400px;
+  max-width: 100%;
   align-self: center;
   border: none;
   margin: 0.2px auto;
