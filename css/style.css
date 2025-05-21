@@ -21,12 +21,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: 500;
 }
 
 p, a {
   font-size: 0.9em;
+  font-weight: 500;
 }
 
 .main-header {
@@ -38,7 +39,12 @@ p, a {
   color: #333;
   padding: 1em;
 }
-
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
 .menu ul {
   display: flex;
   flex-direction: column;
@@ -47,7 +53,6 @@ p, a {
   padding: 0;
   margin: 0;
 }
-
 .menu a {
   background-color: white;
   color: #333;
@@ -58,13 +63,13 @@ p, a {
   text-align: center;
 }
 
+
 .content {
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
   padding: 2em 0.5em;
 }
-
 .content img {
   order: -1;
   width: 90%;
@@ -72,10 +77,10 @@ p, a {
   align-self: center;
   margin-bottom: 1.5em;
 }
-
 .content p {
   text-align: center;
 }
+
 
 .portfolio,
 .portfolio-content,
@@ -86,30 +91,26 @@ p, a {
   flex-wrap: wrap;
   gap: 0.7em;
 }
-
 .portfolio-content div {
   padding: 1em;
 }
-
 .portfolio h2 {
   margin: 2em 0 1em 0;
   font-weight: bold;
 }
-
 .portfolio-content img {
   width: 100%;
   max-width: 350px;
   height: auto;
 }
-
 .portfolio-content h3 {
   margin: 0.5em 0;
   font-weight: 500;
 }
-
 .portfolio-content p {
   text-align: center;
 }
+
 
 footer.main-footer {
   display: flex;
@@ -134,7 +135,7 @@ footer.main-footer p {
 }
 
 .divider {
-  height: 0.5px;
+  height: 1px;
   background-color: #ccc;
   width: 90%;
   max-width: 100%;
@@ -185,10 +186,18 @@ footer.main-footer p {
   .main-header h1 {
     margin-bottom: 1em;
   }
+
+  .top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
   .menu ul {
     flex-direction: row;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
   }
   .menu a {
     width: 100%;
@@ -197,7 +206,7 @@ footer.main-footer p {
 
   .content {
     flex-direction: row;
-    padding: 2em 2em 4em 2em;
+    padding: 2em;
   }
   .content p {
     order: -1;
@@ -266,7 +275,7 @@ footer.main-footer p {
       display: flex;
       flex-direction: row;
       list-style: none;
-      gap:2em;
+      gap:1em;
     }
 }
 
@@ -274,13 +283,23 @@ footer.main-footer p {
 
 @media (min-width: 1024px) {
 
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar h1 {
+    margin: 0 1.8em;
+  }
+  .menu {
+  margin-left: auto;
+}
+
   .main-header {
     flex-direction: column;
     justify-content: space-between;
-    padding: 1em 3em 1em 3em;
-  }
-  .content {
-    padding: 2em 3em 3em 3em;
+    padding: 2em;
   }
   .content img {
     width: 90%;
@@ -302,8 +321,8 @@ footer.main-footer p {
     margin-bottom: 0.5em;
   }
 
-  .main-footer {
-    padding: 1em 14em;
+  footer.main-footer {
+    padding: 3em 14em;
   }
 
   .footer-bottom-ls {
