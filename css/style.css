@@ -21,13 +21,16 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: 600;
 }
 
 p, a {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 500;
+  color: #444444;
+  text-align: center;
+  text-decoration: none;
 }
 
 .main-header {
@@ -59,7 +62,7 @@ p, a {
   text-decoration: none;
   display: block;
   width: 300px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -70,17 +73,17 @@ p, a {
   align-items: center;
   background-color: #F7F7F7;
   gap: 1em;
-  padding: 2em 0.5em;
+  padding: 2em 0;
 }
 
 .avatar-image {
   width: 0 auto;
   background-color: #ededed;
-  padding: 1em 3.5em;
+  padding: 1em 4em;
   }
 .avatar-image img {
-  width: 130px;
-  height: 130px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -105,11 +108,11 @@ p, a {
 }
 .portfolio-content img {
   width: 100%;
-  max-width: 350px;
-  height: auto;
+  max-width: 340px;
+  height: 200px;
 }
 .portfolio-content h3 {
-  margin: 0.5em 0;
+  margin-top: 1em;
   font-weight: 500;
 }
 .portfolio-content p {
@@ -128,6 +131,10 @@ p, a {
   gap: 1em;
 }
 
+.skill {
+  padding-bottom: 1.5em;
+}
+
 .skill-content div {
   padding: 1em;
 }
@@ -138,10 +145,10 @@ p, a {
 .skill-content img {
   width: 100%;
   max-width: 350px;
-  height: auto;
+  height: 200px;
 }
 .skill-content h3 {
-  margin: 0.5em 0;
+  margin-top: 1em;
   font-weight: 500;
 }
 .skill-content p {
@@ -157,12 +164,12 @@ footer.main-footer {
   flex-wrap: wrap;
   gap: 0.7em;
   background-color: #F7F7F7;
-  padding: 3em 1em;
+  padding: 2em;
 }
 
 footer.main-footer h4 {
   text-align: center;
-  margin-bottom: 2em;
+  margin: 1em 0 2em 0;
 }
 
 footer.main-footer p {
@@ -189,11 +196,11 @@ footer.main-footer p {
   padding: 1em;
 }
 
-.footer-bottom h3, a {
+.footer-bottom h5 {
   margin: 0;
   font-size: 1em;
   font-weight: 600;
-  text-decoration: none;
+  text-align: center;
   color: #444444;
 }
 
@@ -253,11 +260,12 @@ footer.main-footer p {
     width: 0 auto;
     background-color: #ededed;
     padding: 0.5em 4em;
-    }
+  }
+
   .avatar-image img {
     width: 140px;
     height: 140px;
-    object-fit: c5ver;
+    object-fit: cover;
     border-radius: 50%;
     padding: 0.5em;
   }
@@ -279,6 +287,17 @@ footer.main-footer p {
     margin: 2em 0 0 0;
   }
 
+  .skill-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.1em;
+  }
+  div.skill-content .coding {
+    flex-basis: calc(50% - 20px);
+    padding: 2em 0;
+    margin-bottom: 0.5em;
+  }
   /** footer Section **/
 
   .footer-bottom {
@@ -374,6 +393,12 @@ footer.main-footer p {
 }
   div.portfolio-content .por {
     flex-basis: calc(33.33% - 1em);
+    padding: 2em 0;
+    margin-bottom: 0.5em;
+  }
+
+  div.skill-content .coding {
+    flex-basis: calc(33% - 20px);
     padding: 2em 0;
     margin-bottom: 0.5em;
   }
