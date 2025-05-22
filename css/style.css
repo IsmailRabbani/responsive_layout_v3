@@ -21,8 +21,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 p, a {
@@ -49,7 +49,7 @@ p, a {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 0.5em;
+  gap: 0.3em;
   padding: 0;
   margin: 0;
 }
@@ -63,24 +63,29 @@ p, a {
   text-align: center;
 }
 
-
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #F7F7F7;
+  gap: 1em;
   padding: 2em 0.5em;
 }
-.content img {
-  order: -1;
-  width: 90%;
-  max-width: 100%;
-  align-self: center;
-  margin-bottom: 1.5em;
-}
-.content p {
-  text-align: center;
+
+.avatar-image {
+  width: 0 auto;
+  background-color: #ededed;
+  padding: 1em 3.5em;
+  }
+.avatar-image img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
+/** portfolio Section **/
 
 .portfolio,
 .portfolio-content,
@@ -111,6 +116,38 @@ p, a {
   text-align: center;
 }
 
+/** Skills section **/
+
+.skill,
+.skill-content,
+.coding {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+}
+
+.skill-content div {
+  padding: 1em;
+}
+.skill h2 {
+  margin: 2em 0 1em 0;
+  font-weight: bold;
+}
+.skill-content img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+.skill-content h3 {
+  margin: 0.5em 0;
+  font-weight: 500;
+}
+.skill-content p {
+  text-align: center;
+}
+/** footer section **/
 
 footer.main-footer {
   display: flex;
@@ -164,8 +201,6 @@ footer.main-footer p {
   display: none;
 }
 
-
-
 /** Device Responsive (Tablet viewport) **/
 
 @media (min-width: 768px) {
@@ -183,22 +218,21 @@ footer.main-footer p {
     flex-direction: column;
     padding: 2em 1em;
   }
-  .main-header h1 {
-    margin-bottom: 1em;
-  }
 
   .top-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
 }
+
   .menu ul {
     flex-direction: row;
     justify-content: center;
     gap: 1em;
   }
+
   .menu a {
     width: 100%;
     background-color: #F7F7F7;
@@ -206,17 +240,27 @@ footer.main-footer p {
 
   .content {
     flex-direction: row;
-    padding: 2em;
+    align-items: flex-start;
+    padding: 2em 1em;
   }
+
   .content p {
     order: -1;
     text-align: left;
   }
-  .content img {
-    width: 90%;
-    max-width: 100%;
-    margin: 0 auto;
-}
+
+  .avatar-image {
+    width: 0 auto;
+    background-color: #ededed;
+    padding: 0.5em 4em;
+    }
+  .avatar-image img {
+    width: 140px;
+    height: 140px;
+    object-fit: c5ver;
+    border-radius: 50%;
+    padding: 0.5em;
+  }
 
 /** Portfolio Section **/
 
@@ -293,7 +337,7 @@ footer.main-footer p {
     margin: 0 1.8em;
   }
   .menu {
-  margin-left: auto;
+    margin-left: auto;
 }
 
   .main-header {
@@ -301,19 +345,32 @@ footer.main-footer p {
     justify-content: space-between;
     padding: 2em;
   }
-  .content img {
-    width: 90%;
-    max-width: 100%;
+
+  .content {
+    padding: 2em;
   }
+  .avatar-image {
+    width: 0 auto;
+    background-color: #ededed;
+    padding: 2em 6em;
+    }
+  .avatar-image img {
+    width: 140px;
+    height: 140px;
+    object-fit: c5ver;
+    border-radius: 50%;
+    padding: 0.5em;
+  }
+
   .content p {
     font-size: 1.25em;
     margin: 0  1em 1em 0.5em;
   }
 
-.portfolio-content {
-  align-items: stretch;
-  gap: 0.5em;
-  padding: 0 2em;
+  .portfolio-content {
+    align-items: stretch;
+    gap: 0.5em;
+    padding: 0 2em;
 }
   div.portfolio-content .por {
     flex-basis: calc(33.33% - 1em);
