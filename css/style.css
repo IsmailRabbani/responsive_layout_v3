@@ -143,10 +143,9 @@ p, a {
   margin: 2em 0 1em 0;
   font-weight: bold;
 }
-.skill-content img {
+.coding img {
   width: 100%;
-  max-width: 350px;
-  height: 200px;
+  max-width: 300px;
 }
 .skill-content h3 {
   margin-top: 1em;
@@ -154,6 +153,31 @@ p, a {
 }
 .skill-content p {
   text-align: center;
+}
+
+div.html-image {
+  background-color: #52bab4;
+  padding: 2em 5em;
+}
+
+div.css-image {
+  background-color: #e0ab26;
+  padding: 2em 5em;
+}
+
+div.wix-image {
+  background-color: #89a1d0;
+  padding: 2em 5em;
+}
+
+div.wp-image {
+  background-color: #2572aa;
+  padding: 2em 5em;
+}
+
+.skill-image img {
+  width: 110px;
+  height: 125px;
 }
 /** footer section **/
 
