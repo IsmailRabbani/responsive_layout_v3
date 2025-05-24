@@ -271,16 +271,31 @@ footer.main-footer p {
   }
 
 /** Portfolio Section **/
+  .portfolio {
+    padding-bottom: 1.5em;
+  }
+  .portfolio-content,
+  .skill-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
 
-.portfolio-content {
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+  .por {
+    display: flex;
+    flex-direction: column;
+  }
 
-div.portfolio-content .por {
-    flex-basis: calc(50% - 20px);
-    padding: 1em;
+  .portfolio-content article {
+    padding: 0;
+  }
+
+  div.portfolio-content .por {
+      flex-basis: calc(50% - 20px);
+      max-width: 350px;
+      margin-bottom: 0.5em;
   }
   .portfolio h2 {
     margin-top: 2em;
@@ -293,9 +308,13 @@ div.portfolio-content .por {
   }
   div.skill-content .coding {
     flex-basis: calc(50% - 20px);
-    padding: 1em;
+    max-width: 350px;
     margin-bottom: 0.5em;
   }
+  .skill-content article {
+    padding: 0;
+  }
+
   /** footer Section **/
 
   .footer-bottom {
@@ -324,7 +343,6 @@ div.portfolio-content .por {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #F7F7F7;
     padding: 0 2em 2em 2em;
   }
   nav.footer-nav {
@@ -351,20 +369,20 @@ div.portfolio-content .por {
     align-items: center;
   }
   .top-bar h1 {
-    margin: 0 1.8em;
+    margin: 0 1em;
   }
   .menu {
-    margin-left: auto;
+    margin: 1em 1em;
 }
 
   .main-header {
     flex-direction: column;
     justify-content: space-between;
-    padding: 2em;
+    padding-bottom: 2em;
   }
 
   .content {
-    padding: 2em;
+    padding: 1em;
   }
   .avatar-image {
     width: 0 auto;
@@ -384,20 +402,23 @@ div.portfolio-content .por {
     margin: 0  1em 1em 0.5em;
   }
 
-  .portfolio-content {
+  .portfolio,
+  .skill {
+    padding: 1em;
+  }
+
+  .portfolio-content,
+  .skill-content {
+    justify-content: space-evenly;
     align-items: stretch;
-    gap: 0.5em;
-    padding: 0 2em;
 }
   div.portfolio-content .por {
-    flex-basis: calc(33.33% - 1em);
-    padding: 2em 0;
+    flex-basis: calc(33.33% - 20px);
     margin-bottom: 0.5em;
   }
 
   div.skill-content .coding {
-    flex-basis: calc(33% - 20px);
-    padding: 2em 0;
+    flex-basis: calc(33.33% - 20px);
     margin-bottom: 0.5em;
   }
 
