@@ -51,6 +51,8 @@ p, a {
 .menu {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  flex-direction: column;
   align-items: center;
   gap: 1em;
 }
@@ -58,14 +60,13 @@ p, a {
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: 165%;
-  max-width: 350px;
+  width: 98%;
+  max-width: 300px;
   gap: 0.3em;
   padding: 0;
   margin: 0;
 }
 .menu li {
-
   display: flex;
   align-items: center;
   justify-content: center;
