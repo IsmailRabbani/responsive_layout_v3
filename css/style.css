@@ -37,7 +37,7 @@ p, a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #F7F7F7;
+  background-color: #f0f2f5;
   color: #333;
   padding: 1em;
 }
@@ -56,7 +56,7 @@ p, a {
   margin: 0;
 }
 .menu a {
-  background-color: white;
+  background-color: #ffffff;
   color: #333;
   text-decoration: none;
   display: flex;
@@ -72,7 +72,7 @@ p, a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F7F7F7;
+  background-color: #f0f2f5;
   gap: 1em;
   padding: 2em 0;
 }
@@ -98,8 +98,9 @@ p, a {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.7em;
+  gap: 0.8em;
 }
+
 .portfolio-content article {
   padding: 1em;
 }
@@ -109,8 +110,7 @@ p, a {
 }
 .portfolio-content img {
   width: 100%;
-  max-width: 340px;
-  height: 200px;
+  max-width: 350px;
 }
 .portfolio-content h3 {
   margin-top: 1em;
@@ -133,19 +133,21 @@ p, a {
 }
 
 .skill {
+  background-color: #f0f2f5;
   padding-bottom: 1.5em;
-}
-
-.skill-content article {
-  padding: 1em;
 }
 .skill h2 {
   margin: 2em 0 1em 0;
   font-weight: bold;
 }
+
+.skill-content article {
+  padding: 1em;
+}
+
 .coding img {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
 }
 .skill-content h3 {
   margin-top: 1em;
@@ -155,30 +157,6 @@ p, a {
   text-align: center;
 }
 
-div.html-image {
-  background-color: #52bab4;
-  padding: 2em 5em;
-}
-
-div.css-image {
-  background-color: #e0ab26;
-  padding: 2em 5em;
-}
-
-div.wix-image {
-  background-color: #89a1d0;
-  padding: 2em 5em;
-}
-
-div.wp-image {
-  background-color: #2572aa;
-  padding: 2em 5em;
-}
-
-.skill-image img {
-  width: 110px;
-  height: 125px;
-}
 /** footer section **/
 
 footer.main-footer {
@@ -188,7 +166,7 @@ footer.main-footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.7em;
-  background-color: #F7F7F7;
+  background-color: #ffffff;
   padding: 2em;
 }
 
@@ -204,8 +182,8 @@ footer.main-footer p {
 }
 
 .divider {
-  height: 1px;
-  background-color: #ccc;
+  height: 2px;
+  background-color: #f0f2f5;
   width: 90%;
   max-width: 100%;
   align-self: center;
@@ -217,7 +195,7 @@ footer.main-footer p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #F7F7F7;
+  background-color: #ffffff;
   padding: 1em;
 }
 
@@ -237,10 +215,6 @@ footer.main-footer p {
 /** Device Responsive (Tablet viewport) **/
 
 @media (min-width: 768px) {
-
-  p {
-    font-size: 1.11em;
-  }
 
   /** Header Section **/
 
@@ -268,7 +242,7 @@ footer.main-footer p {
 
   .menu a {
     width: 100%;
-    background-color: #F7F7F7;
+    background-color: #f0f2f5;
   }
 
   .content {
@@ -298,30 +272,28 @@ footer.main-footer p {
 
 /** Portfolio Section **/
 
-  .portfolio-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.1em;
-  }
-  div.portfolio-content .por {
+.portfolio-content {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.portfolio-content .por {
     flex-basis: calc(50% - 20px);
-    padding: 2em 0;
-    margin-bottom: 0.5em;
+    padding: 1em;
   }
   .portfolio h2 {
-    margin: 2em 0 0 0;
+    margin-top: 2em;
   }
 
   .skill-content {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.1em;
   }
   div.skill-content .coding {
     flex-basis: calc(50% - 20px);
-    padding: 2em 0;
+    padding: 1em;
     margin-bottom: 0.5em;
   }
   /** footer Section **/
