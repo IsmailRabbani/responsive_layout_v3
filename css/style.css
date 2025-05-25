@@ -8,30 +8,17 @@ body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 1em;
-  color: #333333;
+  color: #444444;
   line-height: 1.6;
   background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
+  color: purple;
 }
 
-h1 {
-  font-size: 1.5em;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 1.25em;
-  font-weight: 600;
-}
-
-p, a {
-  font-size: 1em;
-  font-weight: 500;
-  color: #444444;
-  text-align: center;
+a {
   text-decoration: none;
 }
 
@@ -43,7 +30,6 @@ p, a {
   align-items: center;
   text-align: center;
   background-color: #f0f2f5;
-  color: #333;
   padding: 1em;
 }
 
@@ -71,12 +57,15 @@ p, a {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  font-weight: 600;
   height: 45px;
+}
+
+.menu h1 {
+  color: purple;
 }
 .menu a {
   font-weight: 600;
-  color: #333;
+  color: purple;
   text-decoration: none;
 }
 
@@ -95,7 +84,7 @@ p, a {
 .avatar-image {
   background-color: #ededed;
   padding: 1em 4em;
-  }
+}
 .avatar-image img {
   width: 30vw;
   max-width: 180px;
@@ -118,17 +107,15 @@ p, a {
 .portfolio-content article {
   padding: 1em;
 }
-.portfolio h2 {
+.portfolio h3 {
   margin: 2em 0 1em 0;
-  font-weight: bold;
 }
 .portfolio-content img {
   width: 100%;
   max-width: 370px;
 }
-.portfolio-content h3 {
+.portfolio-content h4 {
   margin-top: 1em;
-  font-weight: 500;
 }
 .portfolio-content p {
   text-align: center;
@@ -150,22 +137,19 @@ p, a {
   background-color: #f0f2f5;
   padding-bottom: 1.5em;
 }
-.skill h2 {
+.skill h3  {
   margin: 2em 0 1em 0;
-  font-weight: bold;
 }
 
 .skill-content article {
   padding: 1em;
 }
-
 .coding img {
   width: 100%;
   max-width: 370px;
 }
-.skill-content h3 {
+.skill-content h4 {
   margin-top: 1em;
-  font-weight: 500;
 }
 .skill-content p {
   text-align: center;
@@ -190,7 +174,6 @@ footer.main-footer h4 {
 footer.main-footer p {
   margin: 0;
   text-align: center;
-  font-weight: 350;
 }
 
 p.contact-detail {
@@ -368,6 +351,11 @@ p.contact-detail {
       list-style: none;
       gap:1em;
     }
+
+  .footer-menu a {
+      color: purple;
+      font-weight: 600;
+    }
 }
 
 /** Device Responsive (larger screen) **/
@@ -385,7 +373,7 @@ p.contact-detail {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 1em;
+    padding-right: 1.3em;
   }
   .menu h1 {
     margin: 0 1em;
